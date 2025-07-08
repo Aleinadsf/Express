@@ -7,7 +7,14 @@ app.use(express.json());
 
 // Ruta de prueba
 app.get('/', (req, res) => {
-  res.send('¡Hola desde Node.js!');
+  const mensaje = `
+    ¡Hola desde Node.js!<br><br>
+    <strong>Integrantes del grupo:</strong><br>
+    - Daniela Suarez<br>
+    - Jose Balcazar<br>
+    - Maricielo Aquijes
+  `;
+  res.send(mensaje);
 });
 
 app.listen(PORT, () => {
