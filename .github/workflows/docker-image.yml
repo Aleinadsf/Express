@@ -23,5 +23,5 @@ jobs:
 
       - name: Construir y subir imagen
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/mi-backend-node:latest .
-          docker push ${{ secrets.DOCKER_USERNAME }}/mi-backend-node:latest
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/express:latest .
+          docker push ${{ secrets.DOCKER_USERNAME }}/express:latest
